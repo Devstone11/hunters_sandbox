@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   get 'sell' => 'users#sell'
   get 'feed' => 'products#index'
   get 'profile' => 'pages#profile'
-  get 'users' => 'users#show'
+  get 'users/:id/edit' => 'users#edit'
 
   get 'cart' => 'carts#show'
   get 'wishlist' => 'wishlist#index'
