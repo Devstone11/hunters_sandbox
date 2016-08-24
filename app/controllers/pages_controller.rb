@@ -7,5 +7,9 @@ class PagesController < ApplicationController
   def index
     @message = "welcome"
   end
+  
+  def profile
+
+  end
 
 end

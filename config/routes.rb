@@ -18,6 +18,8 @@ Rails.application.routes.draw do
   get 'hunt' => 'users#hunt'
   get 'sell' => 'users#sell'
   get 'feed' => 'products#index'
+  get 'profile' => 'pages#profile'
+  get 'users' => 'users#show'
 
   get 'cart' => 'carts#show'
   get 'wishlist' => 'wishlist#index'

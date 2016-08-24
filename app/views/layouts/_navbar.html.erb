@@ -27,6 +27,8 @@
           <% if current_user && current_user.wished_items.present? %>
               <%= activatable_li_tag_with_link "Wishlist", wishlist_path %>
           <% end %>
+          <%= activatable_li_tag_with_link "Profile", profile_path %>
+          
         </ul>
         </ul>
 
