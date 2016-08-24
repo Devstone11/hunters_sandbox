@@ -5,11 +5,11 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    @products = Product.unclaimed
+    @products = Product.unclaimed.active
   end
 
   def feed
-    @products = Product.unclaimed
+    @products = Product.unclaimed.active
   end
 
   # GET /products/1
